@@ -3,279 +3,443 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zachary Prejean's Page</title>
+    <title>Zachary Prejean | Full-Stack Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
-<body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
 
-<nav class="navbar navbar-expand-lg navbar-dark nav-style">
-        <div class="container-fluid">
-        <div class = "icon-con">
-          <a class="navbar-brand" href="https://www.linkedin.com/in/zachary-prejean" target="_blank"><img src="images/Logo.svg" alt="Zachary Prejean's personal logo" class="m-1"></a>
-        </div>
-
-        <div class="flex-cin">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link" aria-current="page" href="#home">Home</a>
-              <a class="nav-link" href="#about">About</a>
-              <a class="nav-link" href="#skills">Skills</a>
-              <a class="nav-link" href="#recent-work">Recent</a>
-            </div>   
-            <img src="images/moon.png" id="icon" alt="Icon for dark theme toggle switch.">   
-        </div>
-        </div>
-        </div>
-      </nav>
-
-
-  <div class="container-fluid p-0">
-        <div class="hero">
-
-          <div class="text-center">
-            <p class="glitch-heading">ZAC PREJEAN</p>
-          
-          </div> 
-        </div>
-      </div>
-      
-      
-<main class="text-center">
-    <div class="container-fluid pt-4 pt-md-5 intro-srt"> 
-      
-      <img src="images/profile-pic.jpg" class="proPic mx-auto" alt="profile picture">
-        
-      <div class="mx-auto col-md-8 intro">
-        <h1 class="display-4 fw-bold">Software Engineer Front-End Web Developer & Designer</h1>
-        <p class="lead">I design and code beautifully simple projects, and love what I do.</p>
-       <div class="diagnal-break"></div> 
-      </div>
-
-        <div>
-          <img src="images/evolution.svg" id="evolution" class="mt-4" alt="Silhouette diogram of evolution of man.">
-        </div>
-    </div>
-     
-
-    <div class="container-fluid p-4 p-md-5 intro-info" id="about" >
-        <div class="mx-auto col-md-8">
-        <h2 class="fw-bold">Hi, I'm Zac. Nice to meet you.</h2>
-        <p class="fw-semibold">I am a passionate Front-End Web Developer, 
-          with a never-ending drive to improve my skills. I love applying 
-          my experience to create digital products for both business and 
-          consumer use. I am confident in my work, always curious, and always 
-          refining, expanding, growing, and improving my proficiency one design at a time.</p>
-        </div> 
-    </div> 
-
-    
-    <div class="container-fluid p-4 skills-con" id="skills">
-        <div class="row">
-            <div class="col-12 col-md-5 p-3 p-md-4 p-lg-5 mx-auto skills-1">
-                <img src="images/Design-Icon.svg" class="skills-icon m-2" alt="Icon of two pencils being crossed.">
-                <h2 class="fw-semibold">Designer</h2>
-                <p>I value simple content structure, clean design patterns, and thoughtful interactions.</p>
-                <p class="fs-5 color-shift">Things I Enjoy Designing:</p>
-                <p>Web, Apps, Logos</p>
-                <p class="fs-5 color-shift">Design Tools</p>
-                <div>
-                    <p>After Effects</p>
-                    <p>Pen & Paper</p>
-                    <p>Photoshop</p>
-                    <p>Illustrator</p>
-                    <p>Aseprite</p>                   
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">ZAC<span>PREJEAN</span></a>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
                 </div>
-            </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#experience">Experience</a></li> -->
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-            <div class="col-12 col-md-5 p-3 p-md-4 p-lg-5 mx-auto skills-2">
-                <img src="images/Code-Icon.svg" class="skills-icon m-2" alt="Icon with div tag.">
-                <h2 class="fw-semibold">Front-End Developer</h2>
-                <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
-                <p class="fs-5 color-shift">Languages I Speak:</p>
-                <p>HTML, CSS, SASS, JAVA, GIT</p>
-                <p class="fs-5 color-shift">Developer Tools</p>
-                <div>
-                    <p>Visual Studio</p>
-                    <p>Notepad ++</p>
-                    <p>Bootstrap</p>
-                    <p>Shopify</p>
-                    <p>React</p>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hi, I'm</h1>
+                    <div class="text-image">
+                      <img src="images/text.jpg" alt="statue picture">
+                    </div>
+                    <p>Lead Full-Stack Developer specializing in C#, .NET, and enterprise application development</p>
+                    <div class="btn-group">
+                        <a href="#projects" class="btn">View My Work</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+                </div>
+                <div class="statue-image">
+                  <img src="images/statue.jpg" alt="bitmap statue picture">
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- About Section -->
+
+
+    <div class="round-hero-image">
+      <img src="images/profile-pic.png" class="proPic mx-auto" alt="profile picture">
     </div>
-    
-    <div class="work-hist">
-        <div class="container-fluid p-3">
-            <div class="mx-auto col-md-8">
-                <h2 class="fw-bold fs-5">Interested in Collaborting with me?</h2>
-                <p>I'm always open to discussing product design work or partnership opportunities.</p>
-                <button type="button" class="btn btn-outline-info btn-lg d-block mx-auto" data-bs-toggle="modal" data-bs-target="#sign-up">Start a Conversation</button>
+
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+              <div class="hero-image">
+                <img src="images/profile-pic.png" class="proPic mx-auto" alt="profile picture">
+              </div>
+                <div class="about-text">
+                    <h3>Professional Summary</h3>
+                    <p>Lead Full-Stack Developer with 4+ years of experience in C#, .NET, and enterprise application development, specializing in scalable web solutions and workflow automation. Proven track record in leading development teams, optimizing SQL databases, and building cost-saving tools for business efficiency. Adept at full-cycle development from requirements gathering to deployment.</p>
+                    
+                    <h3 style="margin-top: 2rem;">Education</h3>
+                    <p><strong>Treehouse – Front-End Web Development TechDegree</strong> | 2022</p>
+                </div>
+                <div class="skills">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Python</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>ASP.NET Core</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>MS SQL Server</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>React.js</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>C# / .NET</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div> 
+    </section>
 
-
-    
-
-    <div class="container p-3" id="recent-work">
-        <h2  class="fw-bold">My Recent Work</h2>
-        <p class="fw-semibold">Here are a few design projects I have worked on while studying at Treehouse.
-        </p>
-    </div>
-    
-    <div class="row m-3">
-        <div class="col-md-6 col-lg-4">
-  <div class="card-style p-3 mb-2">
-    <img class="card-img-top rounded-2" src="images/ORF.jpg" alt="Online Registration Form Icon">
-    <div class="card-body">
-      <h4 class="card-title color-shift mt-2">Online Registration Form</h4>
-      <p class="card-text">Made a responsive, mobile-first registration form using a variety of HTML form elements.</p>
-      <a href="pages/An%20Online%20Registration%20Form/dist/index" target="_blank" class="btn btn-secondary btn-lg">View</a>
-    </div>
-  </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-  <div class="card-style p-3 mb-3">
-    <img class="card-img-top rounded-2" src="images/WSG.jpg" alt="Web Style Guide Icon">
-    <div class="card-body">
-      <h4 class="card-title color-shift mt-2">Web Style Guide</h4>
-      <p class="card-text">Created a style guide with Sass and Bootstrap that I can drop into any project to speed up styling.</p>
-      <a href="pages/Web%20Style%20Guide/dist/index" target="_blank" class="btn btn-secondary btn-lg">View</a>
-    </div>
-  </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-        <div class="card-style p-3 mb-3">
-          <img class="card-img-top rounded-2" src="images/IPG.jpg" alt="Interactive Photo Gallery Icon">
-          <div class="card-body">
-            <h4 class="card-title color-shift mt-2">Interactive Photo Gallery</h4>
-            <p class="card-text">Made an interactive, searchable gallery of photos useing HTML, CSS, and JavaScript.</p>
-            <a href="pages/Interactive%20Photo%20Gallery/dist/index" target="_blank" class="btn btn-secondary btn-lg">View</a>
+    <section class="tech-stack-section">
+      <div class="container">
+          <div class="section-title">
+              <h2>My Tech Stack</h2>
           </div>
-        </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card-style p-3 mb-3">
-          <img class="card-img-top rounded-2" src="images/GSA.jpg" alt="Game Show App Icon">
-          <div class="card-body">
-            <h4 class="card-title color-shift mt-2">Game Show App</h4>
-            <p class="card-text">Used Javascript to create a browser version of “Wheel of Success”, a word guessing game.</p>
-            <a href="pages/Game%20Show%20App/dist/index" target="_blank" class="btn btn-secondary btn-lg">View</a>
+          <div class="marquee-container">
+              <div class="marquee">
+                  <div class="marquee-content">
+                      <!-- Original content -->
+                      <span class="tech-item">.NET</span>
+                      <span class="tech-item">C#</span>
+                      <span class="tech-item">ASP.NET Core</span>
+                      <span class="tech-item">Python</span>
+                      <span class="tech-item">JavaScript</span>
+                      <span class="tech-item">TypeScript</span>
+                      <span class="tech-item">React.js</span>
+                      <span class="tech-item">Node.js</span>
+                      <span class="tech-item">MS SQL Server</span>
+                      <span class="tech-item">T-SQL</span>
+                      <span class="tech-item">Entity Framework</span>
+                      <span class="tech-item">HTML5</span>
+                      <span class="tech-item">CSS3</span>
+                      <span class="tech-item">Tailwind CSS</span>
+                      <span class="tech-item">Bootstrap</span>
+                      <span class="tech-item">jQuery</span>
+                      <span class="tech-item">WordPress</span>
+                      <span class="tech-item">Git</span>
+                      <span class="tech-item">GitHub</span>
+                      <span class="tech-item">Docker</span>
+                      <span class="tech-item">Azure DevOps</span>
+                      <span class="tech-item">WPF</span>
+                      <span class="tech-item">XAML</span>
+                      <span class="tech-item">REST APIs</span>
+                      <span class="tech-item">Microservices</span>
+                      <!-- Duplicated content for seamless loop -->
+                      <span class="tech-item">.NET</span>
+                      <span class="tech-item">C#</span>
+                      <span class="tech-item">ASP.NET Core</span>
+                      <span class="tech-item">Python</span>
+                      <span class="tech-item">JavaScript</span>
+                      <span class="tech-item">TypeScript</span>
+                      <span class="tech-item">React.js</span>
+                      <span class="tech-item">Node.js</span>
+                      <span class="tech-item">MS SQL Server</span>
+                      <span class="tech-item">T-SQL</span>
+                      <span class="tech-item">Entity Framework</span>
+                      <span class="tech-item">HTML5</span>
+                      <span class="tech-item">CSS3</span>
+                      <span class="tech-item">Tailwind CSS</span>
+                      <span class="tech-item">Bootstrap</span>
+                      <span class="tech-item">jQuery</span>
+                      <span class="tech-item">WordPress</span>
+                      <span class="tech-item">Git</span>
+                      <span class="tech-item">GitHub</span>
+                      <span class="tech-item">Docker</span>
+                      <span class="tech-item">Azure DevOps</span>
+                      <span class="tech-item">WPF</span>
+                      <span class="tech-item">XAML</span>
+                      <span class="tech-item">REST APIs</span>
+                      <span class="tech-item">Microservices</span>
+                  </div>
+              </div>
+              <div class="marquee marquee-reverse">
+                  <div class="marquee-content">
+                      <!-- Original content -->
+                      <span class="tech-item">Agile</span>
+                      <span class="tech-item">Scrum</span>
+                      <span class="tech-item">Kanban</span>
+                      <span class="tech-item">CI/CD</span>
+                      <span class="tech-item">UI/UX</span>
+                      <span class="tech-item">Adobe Illustrator</span>
+                      <span class="tech-item">Photoshop</span>
+                      <span class="tech-item">SQLite</span>
+                      <span class="tech-item">Shopify</span>
+                      <span class="tech-item">E-commerce</span>
+                      <span class="tech-item">SEO</span>
+                      <span class="tech-item">Web Performance</span>
+                      <span class="tech-item">Workflow Automation</span>
+                      <span class="tech-item">Database Optimization</span>
+                      <span class="tech-item">Full-Stack Development</span>
+                      <span class="tech-item">Enterprise Applications</span>
+                      <span class="tech-item">Scalable Solutions</span>
+                      <span class="tech-item">Team Leadership</span>
+                      <span class="tech-item">Mentoring</span>
+                      <span class="tech-item">Code Review</span>
+                      <span class="tech-item">Software Architecture</span>
+                      <!-- Duplicated content for seamless loop -->
+                      <span class="tech-item">Agile</span>
+                      <span class="tech-item">Scrum</span>
+                      <span class="tech-item">Kanban</span>
+                      <span class="tech-item">CI/CD</span>
+                      <span class="tech-item">UI/UX</span>
+                      <span class="tech-item">Adobe Illustrator</span>
+                      <span class="tech-item">Photoshop</span>
+                      <span class="tech-item">SQLite</span>
+                      <span class="tech-item">Shopify</span>
+                      <span class="tech-item">E-commerce</span>
+                      <span class="tech-item">SEO</span>
+                      <span class="tech-item">Web Performance</span>
+                      <span class="tech-item">Workflow Automation</span>
+                      <span class="tech-item">Database Optimization</span>
+                      <span class="tech-item">Full-Stack Development</span>
+                      <span class="tech-item">Enterprise Applications</span>
+                      <span class="tech-item">Scalable Solutions</span>
+                      <span class="tech-item">Team Leadership</span>
+                      <span class="tech-item">Mentoring</span>
+                      <span class="tech-item">Code Review</span>
+                      <span class="tech-item">Software Architecture</span>
+                  </div>
+              </div>
           </div>
-        </div>
-        </div>
+      </div>
+    </section>
 
-        <div class="col-md-6 col-lg-4">
-        <div class="card-style p-3 mb-3">
-          <img class="card-img-top rounded-2" src="images/WD.jpg" alt="WebApp Dashboard Icon">
-          <div class="card-body">
-            <h4 class="card-title color-shift mt-2">WebApp Dashboard</h4>
-            <p class="card-text">Built an interactive dashboard for a web application using advanced web techniques including SVG graphics and JavaScript programming.</p>
-            <a href="pages/WebApp%20Dashboard/dist/index" target="_blank" class="btn btn-secondary btn-lg">View</a>
-          </div>
+    <!-- Experience Section -->
+    <!-- <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-title">
+                <h2>Professional Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jan 2022 – Feb 2025</div>
+                        <h3 class="timeline-title">Lead Software Developer (R&D)</h3>
+                        <div class="timeline-company">Completeful Technologies LLC</div>
+                        <div class="timeline-desc">
+                            <ul>
+                                <li>Developed C#/.NET tools to replace third-party SaaS, saving $24K/year in licensing costs</li>
+                                <li>Built an inventory tracking system with MS SQL Server, improving accuracy by 25% and reduced fulfillment errors</li>
+                                <li>Automated order processing using REST APIs (Python + C#), custom order design, and labeling workflow cutting manual work by 30%</li>
+                                <li>Designed an employee/item tracking system using Python and MS SQL Server, enabling real-time progress monitoring for upper management</li>
+                                <li>Mentored junior developers in .NET best practices, improving code quality and review efficiency</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jan 2020 – Present</div>
+                        <h3 class="timeline-title">Freelance Web Developer</h3>
+                        <div class="timeline-company">Self-Employed</div>
+                        <div class="timeline-desc">
+                            <ul>
+                                <li>Designed and developed custom business websites, improving online presence and customer engagement</li>
+                                <li>Optimized website performance and SEO, increasing traffic and user retention</li>
+                                <li>Built and maintained e-commerce platforms using Shopify, integrating payment gateways and automated order processing</li>
+                                <li>Developed tailored web applications and interactive features to enhance business efficiency</li>
+                                <li>Provided ongoing website maintenance, security patches, and troubleshooting</li>
+                                <li>Collaborated with clients to implement scalable web solutions aligned with their branding</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>
+    </section> -->
 
-        <div class="col-md-6 col-lg-4">
-        <div class="card-style p-3 mb-3">
-          <img class="card-img-top rounded-2" src="images/ED.jpg" alt="Employee Directory Icon">
-          <div class="card-body">
-            <h4 class="card-title color-shift mt-2">Employee Directory</h4>
-            <p class="card-text">Created an employee directory by communicating with a third-party API with JAVA.</p>
-            <a href="pages/AP%20to%20Create%20an%20Employee%20Directory/dist/index" target="_blank" class="btn btn-secondary btn-lg">View</a>
-          </div>
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400" alt="SaaS Replacement Tool">
+                    </div>
+                    <div class="project-info">
+                        <h3>SaaS Replacement Tool</h3>
+                        <p>C#/.NET application that replaced third-party SaaS, saving $24K/year in licensing costs.</p>
+                        <div class="project-tags">
+                            <span class="tag">C#</span>
+                            <span class="tag">.NET</span>
+                            <span class="tag">Cost Savings</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Case Study</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400" alt="Inventory Tracking System">
+                    </div>
+                    <div class="project-info">
+                        <h3>Inventory Tracking System</h3>
+                        <p>MS SQL Server solution that improved inventory accuracy by 25% and reduced fulfillment errors.</p>
+                        <div class="project-tags">
+                            <span class="tag">MS SQL</span>
+                            <span class="tag">T-SQL</span>
+                            <span class="tag">Entity Framework</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400" alt="Order Processing Automation">
+                    </div>
+                    <div class="project-info">
+                        <h3>Order Processing Automation</h3>
+                        <p>REST API solution combining Python and C# to automate order processing, reducing manual work by 30%.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">REST API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Talk About Your Project</h3>
+                    <p>I'm currently available for freelance work or full-time positions. If you have a project that needs creative solutions, or just want to say hello, feel free to reach out!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>zachary.z.prejean@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div>
+                                <h4>GitHub</h4>
+                                <p><a href="https://github.com/Zac-Prejean" target="_blank">github.com/Zac-Prejean</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <p><a href="https://www.linkedin.com/in/zachary-prejean/" target="_blank">linkedin.com/in/zachary-prejean</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                  <form id="contact-form" action="https://formsubmit.co/zachary.z.prejean@gmail.com" method="POST">
+                      <!-- Spam Prevention -->
+                      <input type="hidden" name="_captcha" value="true">
+                      <input type="hidden" name="_template" value="table">
+                      <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html"> <!-- Replace with your actual thank-you page -->
+                      <input type="checkbox" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+                      
+                      <!-- Form Fields -->
+                      <div class="form-group">
+                          <label for="name">Your Name</label>
+                          <input type="text" id="name" name="name" class="form-control" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="email">Your Email</label>
+                          <input type="email" id="email" name="email" class="form-control" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="subject">Subject</label>
+                          <input type="text" id="subject" name="subject" class="form-control" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="message">Message</label>
+                          <textarea id="message" name="message" class="form-control" required></textarea>
+                      </div>
+                      
+                      <!-- reCAPTCHA Widget -->
+                      <div class="form-group recaptcha-container">
+                          <div class="g-recaptcha" data-sitekey="6Le1GisrAAAAAF0I4si6QSdbOpZlfXqWCLHH54pH"></div>
+                      </div>
+                      
+                      <button type="submit" class="btn">Send Message</button>
+                  </form>
+              </div>        
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="container-fluid p-3 closer-con">
-    <div class="p-3 p-md-4 mx-auto col-md-8 closer">
-        <h2 class="auto-type-con">LETS START A <span class="auto-type"></span></h2>
-        <p class="fw-semibold">Interested in working together? Email me, and we can set up a time to chat.</p>
-        <button type="button" class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#sign-up">Contact Me</button>
-    </div> 
-    </div>
-
-</main>
-    <footer class="p-3">
-    
-    <div class="container-md text-center">
-        <div class="center social-con">
-            <div><a href="https://www.linkedin.com/in/zachary-prejean" target="_blank"><img src="images/linkedin.svg" class = "m-1 social-icon" alt="linkedin icon"></a></div>
-            <div><a href="https://github.com/Zac-Prejean" target="_blank"><img src="images/github.svg" class = "m-1 social-icon" alt="github icon"></a></div>
-            <div><img src="images/message.svg" class = "m-1 social-icon" data-bs-toggle="modal" data-bs-target="#sign-up" alt="message icon"></div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/Zac-Prejean" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/zachary-prejean/" class="social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/zac.z.prejean/#" class="social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="copyright">&copy; 2023 Zachary Prejean. All rights reserved.</p>
         </div>
-    </div>
-    <div class="m-3 text-center">
-    <hr>
-    
-    <button type="button" class="btn btn-secondary btn-floating btn-sm" id="top-btn">Back to Top</button>
-    <small>© 2022, Zachary Prejean</small>
-
-    </div>
     </footer>
-    
-    <!-- FORM MODAL -->
-
-            <div class="modal fade" id="sign-up" tabindex="-1" role="dialog">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Get in Contact!</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                  
-            <!-- registration form -->
-            <div class="container mt-1">
-                <form class="row g-3" action="https://formsubmit.co/zachary.z.prejean@gmail.com" method="POST">
-                    <!-- honeypot -->
-                    <input type="text" name="_honey" style="display: none;">
-                    <input type="hidden" name="_captcha" value="false">
-                    <!-- success message -->
-                    <input type="hidden" name="_next" value="https://zac-prejean.github.io/success.html">
-
-                  <div class="col-md-6">
-                        <label for="firstName" class="form-label">First Name</label>
-                        <input type="text" class="form-control" name="name" id="firstName" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="lastName" class="form-label">Last Name</label>
-                        <input type="text" class="form-control" name="last&nbsp;name" id="lastName" required>
-                    </div>
-                    <div class="col-md-7">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="text" class="form-control" name="email" id="email" required>
-                    </div>
-                    <div class="col-md-5">
-                        <label for="phoneNumber" class="form-label">Phone Number</label>
-                        <input type="text" class="form-control" name="phone" id="phoneNumber" placeholder="+1(555)867-5309" required>
-                    </div>
-                    <div class="col-md-12">
-                        <textarea class="form-control" placeholder="Type your ideas here..." name="comments,&nbsp;questions" id="floatingTextarea2" style="height: 100px"></textarea>
-                      </div>
-                      <div class="col-md-12">
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                      </div>
-                </form>
-            </div>
-            <!-- /registration form -->
-
-            </div>
-            </div>
-          </div>
-        </div>
-
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-<script src="js/app.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
