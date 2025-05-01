@@ -616,7 +616,18 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-}
+    align-items: flex-start; /* Align items to start on mobile */
+  }
+  
+  /* Wide screen styles (horizontal row) */
+  @media (min-width: 768px) { /* Adjust breakpoint as needed */
+    .contact-details {
+      flex-direction: row;
+      align-items: center; /* Center items vertically */
+      justify-content: center; /* Center items horizontally */
+      flex-wrap: wrap; /* Allows items to wrap if needed */
+    }
+  }
 
 .contact-item {
     display: flex;
@@ -758,6 +769,17 @@ footer {
         transform: scale(0.85);
     }
 }
+
+.email-link {
+    color: inherit; /* Keeps your existing text color */
+    text-decoration: none; /* Removes underline */
+    transition: color 0.3s ease;
+  }
+  
+  .email-link:hover {
+    color: #4285F4; /* Google blue color on hover */
+    text-decoration: underline;
+  }
 
 .copyright {
     color: rgba(255, 255, 255, 0.7);

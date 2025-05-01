@@ -101,3 +101,11 @@ window.addEventListener('click', function(e) {
     }
 });
 
+document.querySelector('.email-link').addEventListener('click', function(e) {
+    // Check if the user is likely on a Google service
+    if (document.cookie.match(/GOOGLE_ACCOUNT/)) {
+      e.preventDefault();
+      window.open('https://mail.google.com/mail/?view=cm&fs=1&to=zachary.z.prejean@gmail.com', '_blank');
+    }
+    // Otherwise let the default mailto: link work
+  });
