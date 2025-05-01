@@ -99,6 +99,7 @@ header {
     display: flex;
     align-items: center;
     background: #cccccc;
+    padding-top: 80px;
     overflow: hidden;
 }
 
