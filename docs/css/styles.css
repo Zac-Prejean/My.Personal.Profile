@@ -56,7 +56,7 @@ header {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 1.5rem 0;
 }
@@ -429,6 +429,9 @@ h1 {
     .tech-item {
         padding: 0.6rem 1.2rem;
         font-size: 0.9rem;
+    }
+    .tech-icon {
+        max-width: 40px;
     }
 }
 
@@ -807,9 +810,6 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    /* body {
-        margin-top: 300px;
-    } */
     .menu-toggle {
         display: block;
     }
