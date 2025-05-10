@@ -136,17 +136,23 @@ header {
 }
 
 .statue-image,
-.statue-image-half {
+.statue-image-half,
+.helm-statue {
     flex: 1;
     min-width: 300px;
     overflow: hidden;
-    margin-top: 0;
 }
 
 .statue-image img,
-.statue-image-half img {
+.statue-image-half img,
+.helm-statue img {
     width: 100%;
     object-fit: cover;
+}
+
+.helm-statue {
+    border-radius: 0 8px 8px 0;
+    max-width: 500px;
 }
 
 .round-hero-image {
@@ -165,6 +171,24 @@ header {
     border-radius: 10%;
     border: 5px solid white;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Pitch */
+.pitch {
+    padding: 25px;
+    border-radius: 8px 0 0 8px;
+    box-shadow: var(--box-shadow);
+    color: var(--light-color);
+    background-color: var(--primary-color);
+}
+
+.pitch-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
 /* Hide on medium and large screens */
@@ -197,6 +221,10 @@ header {
     }
     .hero-content {
         flex-direction: column;
+    }
+    .pitch-container {
+        flex-direction: column;
+        gap: 1rem;
     }
 }
 
@@ -337,6 +365,7 @@ h1 {
     border-radius: 5px;
     transition: width 1s ease;
 }
+
 
 /* Tech Stack Marquee Styles */
 .tech-stack-section {
